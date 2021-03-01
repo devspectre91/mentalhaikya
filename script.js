@@ -117,7 +117,7 @@ function handleEnter(event) {
 
     let inputElm = document.querySelector("input");
     let message = document.querySelector("h2");
-    if (event.keyCode == 13 && inputElm.value != 0) {
+    if (event.keyCode == 13 && inputElm.value != "") {
         if (Number(inputElm.value) === Number(correctValue)) {
             score++;
             total++;
