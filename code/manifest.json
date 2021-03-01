@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Mental Hai kya?",
+    "description": "Keeps you mentally sharp.",
+    "version": "1",
+    "author": "Devanshu Tiwari",
+    "permissions":["activeTab", "storage"],
+    "icons": { "16": "icon16.png",
+           "32": "icon32.png",
+            "64": "icon64.png",
+          "128": "icon128.png" },
+    "browser_action": {
+        "default_icon": "icon64.png"       
+      },
+      "chrome_url_overrides" : {  "newtab": "index.html"}
+}

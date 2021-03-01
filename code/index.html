@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mental hai kya?</title>
+		<link rel="stylesheet" href="style.css" />
+		
+	</head>
+	<body>
+		<main class="main">
+			<h1>mental hai kya?</h1>
+
+			<section class="container">
+				<h2>Select a category to start training </h2>
+				<ul class="card-container wrap flex">
+					<li class="card flex-31">
+						<span data-name="squares">Squares</span>
+					</li>
+					<li class="card flex-31">
+						<span data-name="multiply">Multiplication</span>
+					</li>
+					<li class="card flex-31">
+						<span data-name="addition">Addition</span>
+					</li>
+				</ul>
+			
+
+				<section class="board">
+					<span class="display"></span> <input type="text" />
+					<div class="keyboard flex">
+						<div>1</div>
+						<div>2</div>
+						<div>3</div>
+						<div>4</div>
+						<div>5</div>
+						<div>6</div>
+						<div>7</div>
+						<div>8</div>
+						<div>9</div>
+					</div>
+				</section>
+        <section class="result">
+          <div class="total-attempts"></div>
+          <div class="correct-answers"></div>
+          <button class="restart">Restart</button>
+        </section>
+        <button class="progress">View Progress</button>
+			</section>
+		</main>
+		<script src="./data.js"></script>
+		<script src="./script.js"></script>
+	</body>
+</html>
