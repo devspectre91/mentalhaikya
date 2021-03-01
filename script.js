@@ -29,7 +29,7 @@ function handleClick(event) {
     setTimeout(() => {
         clearInterval(starter);
         document.querySelector("ul").style.display = "none";
-        document.querySelector("h2").style.display = "none";
+        document.querySelector("h2").innerText = `Press Enter key to submit`;
         document.querySelector(".board").style.display = "block";
 
         let keypad = document.querySelector(".keyboard");
@@ -56,7 +56,10 @@ function handleResult() {
     correctOnes.innerText = `You got ${score} questions right!`
 }
 function resetStyles() {
-    document.querySelector("h2").style.display = "none";
+    let h2 = document.querySelector("h2");
+    h2.classList.remove("wrong");
+    h2.classList.remove("correct");
+    h2.innerText = `Press Enter key to submit`;
     let inputElm = document.querySelector("input");
     inputElm.value = "";
 }
